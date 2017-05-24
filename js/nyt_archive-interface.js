@@ -1,7 +1,7 @@
 var Archive = require("./../js/archive.js").archiveModule;
 
 var displayHeadlines = function(object) {
-  $("#patience").hide();
+  $(".patience").hide();
   $("#headline").append(`<h4><a href="${object.web_url}">${object.headline.main}</a></h4>`);
   object.multimedia.forEach(function(photo) {
     if (photo.width === 190) {
@@ -18,7 +18,7 @@ var totalHeadlines = function(hits) {
 $(function(){
   $("#date").click(function(event){
     event.preventDefault();
-    $("#patience").show();
+    $(".patience").show();
     $("#headline").empty();
     $("#total-headlines").text("");
     var year = $("#year").val();
