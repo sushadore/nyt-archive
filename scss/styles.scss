@@ -1,0 +1,27 @@
+$gray: #dbe1e5;
+$med-gray: #a7b2b8;
+$dark-gray: #767c80;
+$red: #e6223d;
+
+body {
+  background-color: $gray;
+}
+
+h1 {
+  color: $dark-gray;
+  font-size: 70px;
+}
+
+.btn {
+  background-color: $med-gray;
+}
+
+#headline {
+  h1 {
+    color: $red;
+  }
+}
+
+#patience {
+  display: none;
+}

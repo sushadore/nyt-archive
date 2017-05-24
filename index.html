@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/moment/min/moment.min.js"></script>
-    <script type="text/javascript" src="build/js/app.js"></script>
+    <link rel="stylesheet" href="build/css/vendor.css">
     <link rel="stylesheet" href="build/css/styles.css">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
     <title></title>
   </head>
 
   <body>
     <div class="container">
-
+      <h1>New York Times Archive</h1>
+      <h3>Comprehensive headline list by month</h3>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="form-group">
+            <form>
+              <label for="month">Month</label>
+              <input class="form-control" id="month" type="number">
+              <label for="year">Year</label>
+              <input class="form-control" id="year" type="number">
+              <br>
+              <button class="btn btn-default" id="date" type="submit">Find Headlines</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <h4 id="patience">This may take a minute!</h4>
+      <h4 id="total-headlines"></h4>
+      <div id="headline"></div>
     </div>
   </body>
-
 </html>
-

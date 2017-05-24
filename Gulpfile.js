@@ -15,8 +15,8 @@ var babel = require("gulp-babel");
 var buildProduction = utilities.env.production;
 
 var lib = require('bower-files')({
-  "override":{
-    "bootstrapp": {
+  "overrides":{
+    "bootstrap": {
       "main": [
         "less/bootstrap.less",
         "dist/css/bootstrap.css",
