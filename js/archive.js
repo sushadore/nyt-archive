@@ -12,6 +12,7 @@ Archive.prototype.headlines = function(displayHeadlines, totalHeadlines) {
     });
     totalHeadlines(query.response.meta.hits);
   }).fail(function(query) {
+    $(".patience").hide();
     $("#headline").append(`<h1>${query.statusText}!!</h1>`);
   });
 };
